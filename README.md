@@ -21,13 +21,17 @@ Users can chat with the tutor, select subject and level, and the assistant provi
 ```bash
 npm install
 npm run dev
-
+```
+```bash
 Visit in browser:
 http://127.0.0.1:8787/
+```
 
 Deploy
+```bash
 npm run deploy
-
+```
+```bash
 Config (wrangler.toml)
 [ai]
 binding = "AI"
