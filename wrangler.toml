@@ -1,0 +1,10 @@
+name = "cf_ai_study_tutor"
+main = "src/index.mjs"
+compatibility_date = "2025-01-01"
+
+[ai]
+binding = "AI"
+
+[[kv_namespaces]]
+binding = "CHAT_KV"
+id = "3afe770394cf4f838595d4005f0e721f"
