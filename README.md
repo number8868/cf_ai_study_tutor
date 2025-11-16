@@ -19,31 +19,40 @@ Users can chat with the tutor, select subject and level, and the assistant provi
 ## Run Locally
 
 ```bash
+##########################################
+# 1️⃣ Install & Start
+##########################################
 npm install
 npm run dev
-```
-```bash
-Visit in browser:
-http://127.0.0.1:8787/
-```
 
-Deploy
-```bash
+
+##########################################
+# 2️⃣ Open in Browser
+##########################################
+http://127.0.0.1:8787/
+
+
+##########################################
+# 3️⃣ Deploy
+##########################################
 npm run deploy
-```
-```bash
-Config (wrangler.toml)
+
+
+##########################################
+# 4️⃣ wrangler.toml Example
+##########################################
 [ai]
 binding = "AI"
 
 [[kv_namespaces]]
 binding = "CHAT_KV"
 id = "YOUR_KV_ID"
+
+
+##########################################
+# Notes
+##########################################
+# - Conversation memory stored using Cloudflare KV
+# - Prompt definition located in PROMPTS.md
+# - max_tokens and temperature configurable in src/index.mjs
 ```
-Notes
-
-Conversation memory stored per session using KV
-
-Prompt definition is included in PROMPTS.md
-
-Max tokens and temperature configurable in Worker code
