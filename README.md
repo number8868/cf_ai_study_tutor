@@ -35,7 +35,7 @@ binding = "AI"
 [[kv_namespaces]]
 binding = "CHAT_KV"
 id = "YOUR_KV_ID"
-
+```
 Notes
 
 Conversation memory stored per session using KV
